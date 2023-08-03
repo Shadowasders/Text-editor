@@ -29,7 +29,7 @@ export const getDb = async () => {
   const txt = textDb.transaction('Jate', 'readonly');
   const store = txt.objectStore('Jate');
   const request = store.getAll();
-  const result = await result;
+  const result = await request;
   console.log('result.value', result);
   return result;
 };
