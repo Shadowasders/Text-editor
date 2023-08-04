@@ -14,24 +14,27 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
-  const textDb = await openDB('Jate', 1);
-  const txt = textDb.transaction('Jate','readwrite');
-  const store = txt.objectStore('Jate');
-  const request = store.put({ id: 1, Jate: content});
-  const result = request;
-  console.log('?? did it work?', result);
+  console.log("putDb");
+  const textDb = await openDB('jate', 1);
+  console.log(textDb);
+  const txt = textDb.transaction('jate','readwrite');
+  const store = txt.objectStore('jate');
+  const request = store.put({ id: 1, value: content});
+  const result = await request;
+  console.log('data saved', result);
+  return result.value;
 };
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.log('get everything from database');
-  const textDb = await openDB('Jate', 1);
-  const txt = textDb.transaction('Jate', 'readonly');
-  const store = txt.objectStore('Jate');
-  const request = store.getAll();
+  const textDb = await openDB('jate', 1);
+  const txt = textDb.transaction('jate', 'readonly');
+  const store = txt.objectStore('jate');
+  const request = store.get(1);
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 };
 
 initdb();

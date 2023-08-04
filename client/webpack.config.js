@@ -29,14 +29,14 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         fingerprints: false,
-        InjectManifest: true,
+        inject: true,
         name: 'text editor',
         short_name: 'txtedit',
         description: 'edit text',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -47,7 +47,6 @@ module.exports = () => {
 
       })
     ],
-// TODO: Add CSS loaders and babel to webpack.
     module: {
       rules: [
         {
