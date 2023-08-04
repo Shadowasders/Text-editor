@@ -10,6 +10,7 @@
   - [Testing](#testing)
   - [Contact](#contact)
 
+  ![JATE photo](https://github.com/Shadowasders/Text-editor/assets/99014955/c14f647c-ab1e-4749-9fcd-f39f8a718c5c)
 
   ## Project Description
   This editor allows the user to input their text, and save them in local storage so they can be easily accessed. This app can also be installed so it can be used offline!
