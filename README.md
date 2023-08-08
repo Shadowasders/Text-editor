@@ -16,7 +16,7 @@
   This editor allows the user to input their text, and save them in local storage so they can be easily accessed. This app can also be installed so it can be used offline!
 
   ## Installation
-  Download the file, use npm i once inside to download the dependencies, then use npm run build to build the necessary webpack, then npm run start:dev to start the server. From there go wild! OR, check out the [heroku](https://dashboard.heroku.com/apps/floating-refuge-33497) and download it from there!
+  Download the file, use npm i once inside to download the dependencies, then use npm run build to build the necessary webpack, then npm run start:dev to start the server. From there go wild! OR, check out the [heroku]([https://dashboard.heroku.com/apps/floating-refuge-33497)](https://floating-refuge-33497-e25e38aa42a3.herokuapp.com/) and download it from there!
 
   ## Usage
   Use it to take notes, to mark reminders for youself, or for whatever you want! The uses are endless!
